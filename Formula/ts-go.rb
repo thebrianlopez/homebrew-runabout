@@ -5,21 +5,21 @@
 class TsGo < Formula
   desc "Tree-sitter-based structural Go source analysis CLI"
   homepage "https://github.com/thebrianlopez/runabout"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/thebrianlopez/runabout/releases/download/v0.1.6/ts-go_0.1.6_darwin_amd64.tar.gz"
-    sha256 "9ae90adedf8ddc23a6032f1786de8683af1966d2762c9f3cc0dcf05bbcc993e6"
+    url "https://github.com/thebrianlopez/runabout/releases/download/v0.1.7/ts-go_0.1.7_darwin_amd64.tar.gz"
+    sha256 "d1307594f0b03a14c081a34636aa54ac55743b31c4f643d05e326de721b306f3"
 
     define_method(:install) do
       bin.install "ts-go"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/thebrianlopez/runabout/releases/download/v0.1.6/ts-go_0.1.6_darwin_arm64.tar.gz"
-    sha256 "80c69a33ae688147c518c746eca1076fdddda36002d73de809cafa9cd1ffd84b"
+    url "https://github.com/thebrianlopez/runabout/releases/download/v0.1.7/ts-go_0.1.7_darwin_arm64.tar.gz"
+    sha256 "39b08fed75c87a7fdc7346b01186dbadfc0a250959e32d0e6691be6c2e403768"
 
     define_method(:install) do
       bin.install "ts-go"
