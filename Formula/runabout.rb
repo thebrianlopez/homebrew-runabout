@@ -5,13 +5,13 @@
 class Runabout < Formula
   desc "Personal developer tools  -  mdq, bmux, workctl, linkari, runway, and more"
   homepage "https://github.com/thebrianlopez/runabout"
-  version "0.2.7"
+  version "0.2.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.7/runabout_0.2.7_darwin_amd64.tar.gz"
-      sha256 "b964b3bce6579f638c091a9139bc7e599e4d44e37602b965e594333ec5bdc357"
+      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.8/runabout_0.2.8_darwin_amd64.tar.gz"
+      sha256 "41bd96bfa27b1726f55982025297027b6e0afbed91f7593782c8dc3c1c0eb64f"
 
       define_method(:install) do
         bin.install "mdq"
@@ -20,6 +20,7 @@ class Runabout < Formula
         bin.install "hookval"
         bin.install "effiscore"
         bin.install "castex"
+        bin.install "chain-eval"
         bin.install "bmux"
         bin.install "protonexport"
         bin.install "linkari"
@@ -33,8 +34,8 @@ class Runabout < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.7/runabout_0.2.7_darwin_arm64.tar.gz"
-      sha256 "93b338c44257ecea79a841ca64707157ceee7429e988bc1c239adacb67e873ce"
+      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.8/runabout_0.2.8_darwin_arm64.tar.gz"
+      sha256 "fe66f7f7f16c4f381bf47e4da26c6f16a55de68c8a37e573e63de8fe17918ea5"
 
       define_method(:install) do
         bin.install "mdq"
@@ -43,6 +44,7 @@ class Runabout < Formula
         bin.install "hookval"
         bin.install "effiscore"
         bin.install "castex"
+        bin.install "chain-eval"
         bin.install "bmux"
         bin.install "protonexport"
         bin.install "linkari"
@@ -59,8 +61,8 @@ class Runabout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.7/runabout_0.2.7_linux_amd64.tar.gz"
-      sha256 "fca3bb6cb07c3f3417f25c0516bb27258b39ed20538c2e1ff5d84f7669e5b4c3"
+      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.8/runabout_0.2.8_linux_amd64.tar.gz"
+      sha256 "d2112504f7ce1b78b2cfcd3b906d3e99bf2300f89a2df7a892544d5c8c1689f4"
       define_method(:install) do
         bin.install "mdq"
         bin.install "perfgate"
@@ -68,6 +70,7 @@ class Runabout < Formula
         bin.install "hookval"
         bin.install "effiscore"
         bin.install "castex"
+        bin.install "chain-eval"
         bin.install "bmux"
         bin.install "protonexport"
         bin.install "linkari"
@@ -81,8 +84,8 @@ class Runabout < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.7/runabout_0.2.7_linux_arm64.tar.gz"
-      sha256 "33e9704e86d600d8010b548a3a04999d92ba9d7d2a592d546cb734aa7eb3eb71"
+      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.8/runabout_0.2.8_linux_arm64.tar.gz"
+      sha256 "fd053dcd8df9cac937a519a1356fc32ffede866bdc05a9c1f1e9c570772419da"
       define_method(:install) do
         bin.install "mdq"
         bin.install "perfgate"
@@ -90,6 +93,7 @@ class Runabout < Formula
         bin.install "hookval"
         bin.install "effiscore"
         bin.install "castex"
+        bin.install "chain-eval"
         bin.install "bmux"
         bin.install "protonexport"
         bin.install "linkari"
