@@ -5,13 +5,13 @@
 class Runabout < Formula
   desc "Personal developer tools  -  mdq, bmux, workctl, linkari, runway, and more"
   homepage "https://github.com/thebrianlopez/runabout"
-  version "0.2.12"
+  version "0.2.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.12/runabout_0.2.12_darwin_amd64.tar.gz"
-      sha256 "9038e3274b8a2c4a215bfdc5f275c47c6462f67ba8f440d73436c694454469f4"
+      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.13/runabout_0.2.13_darwin_amd64.tar.gz"
+      sha256 "8bd45069174ccaa97af13eadb0c00425895c553b278fdfeadba7bad4b9ae03fe"
 
       define_method(:install) do
         bin.install "mdq"
@@ -34,8 +34,8 @@ class Runabout < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.12/runabout_0.2.12_darwin_arm64.tar.gz"
-      sha256 "60e9dffe1df5a48f671834c7718d9f6a67e51c838fe00077178d1d1a5d971c60"
+      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.13/runabout_0.2.13_darwin_arm64.tar.gz"
+      sha256 "4b25a665f3e86ef15ce95ae9d720713576d0dc798080feff04f733b4c93a0562"
 
       define_method(:install) do
         bin.install "mdq"
@@ -61,8 +61,8 @@ class Runabout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.12/runabout_0.2.12_linux_amd64.tar.gz"
-      sha256 "5826591fcdf4523c9e3ecbaec8aa3811102f2c32532c9205e4f588dc8d74f653"
+      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.13/runabout_0.2.13_linux_amd64.tar.gz"
+      sha256 "be5963a24adae0e7d0b1de5d82185667353777d4feae8e4e72dab3054122e408"
       define_method(:install) do
         bin.install "mdq"
         bin.install "perfgate"
@@ -84,8 +84,8 @@ class Runabout < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.12/runabout_0.2.12_linux_arm64.tar.gz"
-      sha256 "8640c2f37bbe475bae770a247b6eb2e1ae03dbc1e3a05b36bd34c7988b7029bf"
+      url "https://github.com/thebrianlopez/runabout/releases/download/v0.2.13/runabout_0.2.13_linux_arm64.tar.gz"
+      sha256 "4c9a577732cba6c540af0ad9184d8cf9ef293a6c1116f73687e779cd6fb34c42"
       define_method(:install) do
         bin.install "mdq"
         bin.install "perfgate"
